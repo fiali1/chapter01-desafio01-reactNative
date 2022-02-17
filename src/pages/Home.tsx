@@ -33,7 +33,7 @@ export function Home() {
     setTasks(updatedTasks);
   }
 
-  function handleRemoveTask(id: number) {
+  function handleRemoveTask(id: number): void {
     const updatedTasks = tasks.filter(task => task.id !== id);
 
     setTasks(updatedTasks);
